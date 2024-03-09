@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    background-image: url(../IMAGES/Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'dosis', sans-serif;
+}
+nav {
+    display: block;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    z-index: 10;
+  }
+  .sidenavButton {
+    color: #fff;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #90b4b9, #79a4ad);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: 600;
+    }  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  } 
+  .sidenav a:hover {
+    color: #505050;
+  } 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a.active {
+    color: #4d4d4d;
+  }
+  .sidenav a.active:hover {
+    color: #333333;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .con {
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .conHead {
+    font-weight: 500;
+  }
+  .con h2 {
+    font-weight: 300;
+  }
+  .date {
+    font-size: 125%;
+    color: rgba(0, 0, 0, 0.351);
+    text-align: left;
+    margin-left: 75px;
+  }
+  .logor5 {
+    width: 24px;
+    padding-right: 10px;
+  }
+  .certsHeader {
+    color: black;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    display: block;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .jik {
+    text-align: left;
+    margin-left: 30px;
+  }
+  .klsw {
+    background-color: #EEECE1;
+    text-align: center;
+    color: #EEECE1;
+  }
+  .hihs {
+    margin-left: 75px;
+    margin-right: 20px;
+    font-size: 150%;
+  }
+  .opl {
+    float: left;
+    max-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }

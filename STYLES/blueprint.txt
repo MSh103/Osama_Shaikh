@@ -1,0 +1,17 @@
+@media only screen 
+and (min-device-width: 0px)  {}
+
+@media only screen
+and (min-device-width: 350px) {}
+
+@media only screen
+and (min-device-width: 465px) {}
+
+@media only screen
+and (min-device-width: 840px) {}
+
+@media only screen 
+and (min-device-width: 1123px) {}
+
+@media only screen
+and (min-device-width: 1925px) {}

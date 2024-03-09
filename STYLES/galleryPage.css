@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    background-image: url(../IMAGES/Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'dosis', sans-serif;
+}
+nav {
+    display: block;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    z-index: 10;
+  }
+  .sidenavButton {
+    color: #fff;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #90b4b9, #79a4ad);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: 600;
+    }  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  } 
+  .sidenav a:hover {
+    color: #505050;
+  } 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a.active {
+    color: #4d4d4d;
+  }
+  .sidenav a.active:hover {
+    color: #333333;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+  
+  .Gallery {
+    color: black;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .galleryPics {
+    display: block;
+    position: relative;
+    height: auto;
+  }
+  .btn:hover {
+    background-color: #90b3b9be;
+  }
+  
+  /* Style the Image Used to Trigger the Modal */
+  .myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+
+@media only screen 
+and (min-device-width: 0px)  {
+  .Gallery {
+    padding: 20px;
+    width: 100%;
+    max-width: 170px;
+    margin-bottom: 65px;
+  }
+  .galleryPics {
+    margin-bottom: 15px;
+    max-width: 170px;
+    width: 100%;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .Gallery {
+    padding: 20px;
+    width: 100%;
+    max-width: 235px;
+    margin-bottom: 65px;
+  }
+  .galleryPics {
+    margin-bottom: 15px;
+    max-width: 235px;
+    width: 100%;
+  }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .Gallery {
+    padding: 20px;
+    width: 100%;
+    max-width: 405px;
+    margin-bottom: 65px;
+  }
+  .galleryPics {
+    margin-bottom: 15px;
+    max-width: 405px;
+    width: 100%;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .Gallery {
+    padding: 20px;
+    width: 100%;
+    max-width: 605px;
+    margin-bottom: 65px;
+  }
+  .galleryPics {
+    margin-bottom: 15px;
+    max-width: 605px;
+    width: 100%;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .Gallery {
+    padding: 20px;
+    width: 100%;
+    max-width: 605px;
+    margin-bottom: 65px;
+  }
+  .galleryPics {
+    margin-bottom: 15px;
+    max-width: 605px;
+    width: 100%;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .Gallery {
+    padding: 20px;
+    width: 100%;
+    max-width: 605px;
+    margin-bottom: 65px;
+  }
+  .galleryPics {
+    margin-bottom: 15px;
+    max-width: 605px;
+    width: 100%;
+  }
+}

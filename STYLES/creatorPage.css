@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-image: url(../IMAGES/Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'dosis', sans-serif;
+}
+nav {
+    display: block;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    z-index: 10;
+  }
+  .sidenavButton {
+    color: #fff;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #90b4b9, #79a4ad);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: 600;
+    }  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  } 
+  .sidenav a:hover {
+    color: #505050;
+  } 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a.active {
+    color: #4d4d4d;
+  }
+  .sidenav a.active:hover {
+    color: #333333;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .s10298 {
+    text-align: center;
+    border: hidden 2px;
+  }
+  .sas {
+    color: #6a6969;
+  }
+  .Profile1 {
+    border: 1px hidden;
+    border-radius: 50%;
+  }
+  .btn {
+    border: solid 2px #90b3b9;
+    border-radius: 100px;
+    background-color: #90b3b9;
+    display: block;
+    color: #f5f4e1;
+    text-align: center;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .btn:hover {
+    background-color: #90b3b9be;
+  }
+
+
+@media only screen 
+and (min-device-width: 0px)  {
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 90%;
+    }
+    .Profile1 {
+        max-width: 125px;
+    }
+    .btn {
+        margin-top: 25px;
+        padding: 10px;
+        max-width: 125px;
+        font-size: 75%;
+    }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 100%;
+    }
+    .Profile1 {
+        max-width: 150px;
+    }
+    .btn {
+        margin-top: 25px;
+        padding: 10px;
+        max-width: 150px;
+        font-size: 75%;
+    }
+}
+
+@media only screen
+and (min-device-width: 465px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 140%;
+    }
+    .Profile1 {
+        max-width: 200px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 20px;
+        max-width: 200px;
+        font-size: 95%;
+    }
+}
+
+@media only screen
+and (min-device-width: 840px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 150%;
+    }
+    .Profile1 {
+        max-width: 250px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 20px;
+        max-width: 250px;
+        font-size: 100%;
+    }
+}
+
+@media only screen 
+and (min-device-width: 1123px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 160%;
+    }
+    .Profile1 {
+        max-width: 300px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 25px;
+        max-width: 300px;
+        font-size: 110%;
+    }
+}
+
+@media only screen
+and (min-device-width: 1925px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 220%;
+    }
+    .Profile1 {
+        max-width: 450px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 25px;
+        max-width: 350px;
+        font-size: 150%;
+    }
+}

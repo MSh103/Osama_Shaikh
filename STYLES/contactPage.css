@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background-image: url(../IMAGES/Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'dosis', sans-serif;
+}
+nav {
+    display: block;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    z-index: 10;
+  }
+  .sidenavButton {
+    color: #fff;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #90b4b9, #79a4ad);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: 600;
+    }  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  } 
+  .sidenav a:hover {
+    color: #505050;
+  } 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a.active {
+    color: #4d4d4d;
+  }
+  .sidenav a.active:hover {
+    color: #333333;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .Profile1 {
+    border: 1px hidden;
+    border-radius: 50%;
+    max-width: 350px;
+  }
+  .s10298 {
+    text-align: center;
+    border: hidden 2px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    padding: 8px;
+  }
+  .sas {
+    color: #6a6969;
+  }
+  .btn {
+    border: solid 2px #90b3b9;
+    border-radius: 100px;
+    background-color: #90b3b9;
+    padding: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    text-decoration: none;
+    color: #f5f4e1;
+    text-align: center;
+    font-size: 150%;
+  }
+  .btn:hover {
+    background-color: #90b3b9be;
+  }

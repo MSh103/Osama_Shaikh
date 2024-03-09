@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-image: url(../IMAGES/Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'dosis', sans-serif;
+}
+nav {
+    display: block;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    z-index: 10;
+  }
+  .sidenavButton {
+    color: #fff;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #90b4b9, #79a4ad);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: 600;
+    }  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  } 
+  .sidenav a:hover {
+    color: #505050;
+  } 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a.active {
+    color: #4d4d4d;
+  }
+  .sidenav a.active:hover {
+    color: #333333;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .exper3 {
+    color: black;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    display: block;
+    width: 80%;
+    height: 100%;
+  }
+  .CVpages {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+    border: 2px hidden;
+  }
+  .pages {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+  .round {
+    border-radius: 50%;
+  }
+  .previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #828282;
+    color: white;
+  }
+  .pageButton.active {
+    background-color: #666;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .pageButton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  .pageButton {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+  }
+  .btnDOWNLOAD {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+  }
+  .btnDOWNLOAD:hover {
+    background-color: #ff0000;
+    color: white;
+  }
