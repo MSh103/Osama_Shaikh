@@ -68,11 +68,8 @@ nav {
   .s10298 {
     text-align: center;
     border: hidden 2px;
-    margin-top: 5px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 500px;
-    padding: 8px;
   }
   .sas {
     color: #6a6969;
@@ -81,16 +78,154 @@ nav {
     border: solid 2px #90b3b9;
     border-radius: 100px;
     background-color: #90b3b9;
-    padding: 25px;
-    display: block;
-    margin-right: auto;
     margin-left: auto;
-    max-width: 500px;
+    margin-right: auto;
+    display: block;
     text-decoration: none;
     color: #f5f4e1;
-    text-align: center;
-    font-size: 150%;
   }
   .btn:hover {
     background-color: #90b3b9be;
   }
+
+  @media only screen 
+and (min-device-width: 0px)  {
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 90%;
+    }
+    .Profile1 {
+        max-width: 125px;
+    }
+    .btn {
+        margin-top: 25px;
+        padding: 10px;
+        max-width: 125px;
+        font-size: 75%;
+    }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 100%;
+    }
+    .Profile1 {
+        max-width: 150px;
+    }
+    .btn {
+        margin-top: 25px;
+        padding: 10px;
+        max-width: 150px;
+        font-size: 75%;
+    }
+}
+
+@media only screen
+and (min-device-width: 465px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 140%;
+    }
+    .Profile1 {
+        max-width: 200px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 20px;
+        max-width: 200px;
+        font-size: 95%;
+    }
+}
+
+@media only screen
+and (min-device-width: 840px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 150%;
+    }
+    .Profile1 {
+        max-width: 250px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 20px;
+        max-width: 250px;
+        font-size: 100%;
+    }
+}
+
+@media only screen 
+and (min-device-width: 1123px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 160%;
+    }
+    .Profile1 {
+        max-width: 300px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 25px;
+        max-width: 300px;
+        font-size: 110%;
+    }
+}
+
+@media only screen
+and (min-device-width: 1925px)
+{
+    .s10298 {
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
+        padding: 8px;
+    }
+    .sas {
+        font-size: 220%;
+    }
+    .Profile1 {
+        max-width: 450px;
+    }
+    .btn {
+        margin-top: 50px;
+        padding: 25px;
+        max-width: 350px;
+        font-size: 150%;
+    }
+}

@@ -60,33 +60,26 @@ nav {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+
+
+
   .exper3 {
     color: black;
     border: 2px solid #ffffff;
     border-radius: 15px;
     background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
     display: block;
-    width: 80%;
-    height: 100%;
   }
   .CVpages {
+    border: 2px hidden;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 0;
-    width: 100%;
-    border: 2px hidden;
   }
   .pages {
     text-align: center;
-    margin-top: 35px;
-    margin-bottom: 10px;
   }
   .round {
     border-radius: 50%;
@@ -140,3 +133,129 @@ nav {
     background-color: #ff0000;
     color: white;
   }
+
+  @media only screen 
+and (min-device-width: 0px)  {
+  .exper3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  .CVpages {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pages {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .exper3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  .CVpages {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pages {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .exper3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  .CVpages {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pages {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .exper3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  .CVpages {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pages {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .exper3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  .CVpages {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pages {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .exper3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  .CVpages {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pages {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+}

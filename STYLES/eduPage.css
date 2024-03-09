@@ -60,10 +60,10 @@ nav {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  .con {
-    padding-left:  25px;
-    padding-right: 25px;
-  }
+
+
+
+
   .conHead {
     font-weight: 500;
   }
@@ -71,36 +71,49 @@ nav {
     font-weight: 300;
   }
   .date {
-    font-size: 125%;
     color: rgba(0, 0, 0, 0.351);
     text-align: left;
-    margin-left: 75px;
-  }
-  .logor5 {
-    width: 24px;
-    padding-right: 10px;
   }
   .eduHeader {
     color: black;
     border: 2px solid #ffffff;
     border-radius: 15px;
     background-color: #ffffff;
-    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
     display: block;
-    width: 80%;
-    padding-bottom: 20px;
   }
   .jik {
     text-align: left;
-    margin-left: 30px;
   }
   .klsw {
     background-color: #EEECE1;
     text-align: center;
     color: #EEECE1;
+  }
+  .opl {
+    float: left;
+  }
+
+
+@media only screen 
+and (min-device-width: 0px)  {
+  .con {
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 125%;
+    margin-left: 75px;
+  }
+  .eduHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .jik {
+    margin-left: 30px;
   }
   .hihs {
     margin-left: 75px;
@@ -108,8 +121,164 @@ nav {
     font-size: 150%;
   }
   .opl {
-    float: left;
+    max-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .con {
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 125%;
+    margin-left: 75px;
+  }
+  .eduHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .jik {
+    margin-left: 30px;
+  }
+  .hihs {
+    margin-left: 75px;
+    margin-right: 20px;
+    font-size: 150%;
+  }
+  .opl {
     max-width: 60px;
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .con {
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 125%;
+    margin-left: 75px;
+  }
+  .eduHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .jik {
+    margin-left: 30px;
+  }
+  .hihs {
+    margin-left: 75px;
+    margin-right: 20px;
+    font-size: 150%;
+  }
+  .opl {
+    max-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .con {
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 125%;
+    margin-left: 75px;
+  }
+  .eduHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .jik {
+    margin-left: 30px;
+  }
+  .hihs {
+    margin-left: 75px;
+    margin-right: 20px;
+    font-size: 150%;
+  }
+  .opl {
+    max-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .con {
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 125%;
+    margin-left: 75px;
+  }
+  .eduHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .jik {
+    margin-left: 30px;
+  }
+  .hihs {
+    margin-left: 75px;
+    margin-right: 20px;
+    font-size: 150%;
+  }
+  .opl {
+    max-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .con {
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 125%;
+    margin-left: 75px;
+  }
+  .eduHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .jik {
+    margin-left: 30px;
+  }
+  .hihs {
+    margin-left: 75px;
+    margin-right: 20px;
+    font-size: 150%;
+  }
+  .opl {
+    max-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
