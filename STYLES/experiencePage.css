@@ -75,28 +75,13 @@ nav {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 85%;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
   .experienceContentAdjustment {
     text-align: left;
-    padding: 25px;
   }
   .logo1 {
     float: left;
     border: 1px hidden;
-    padding-right: 25px;
-    padding-bottom: 100px;
-  }
-  .con {
-    padding-left: 100px;
-    padding-right: 25px;
-  }
-  .conHead {
-    font-weight: 500;
   }
   .conHead a {
     text-decoration: none;
@@ -106,14 +91,20 @@ nav {
   .conHead a:hover {
     color: #7c7c7c;
   }
+  .conHead1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  .conHead1 a:hover {
+    color: #7c7c7c;
+  }
   .con h2 {
     font-weight: 300;
   }
   .date1 {
-    font-size: 125%;
     color: rgba(0, 0, 0, 0.351);
     text-align: left;
-    padding-left: 25px;
     font-weight: 300;
   }
   .date1 a {
@@ -121,12 +112,19 @@ nav {
     font-weight: 300;
     text-decoration: none;
   }
+  .date2 {
+    color: rgba(0, 0, 0, 0.351);
+    text-align: left;
+    font-weight: 300;
+  }
+  .date2 a {
+    color: rgba(0, 0, 0, 0.351);
+    font-weight: 300;
+    text-decoration: none;
+  }
 
   .conParagraph {
-    padding-left: 25px;
-    padding-right: 50px;
     font-weight: 800;
-    font-size: 155%;
   }
   .btn {
     border: hidden;
@@ -134,7 +132,6 @@ nav {
     color: #cdcdcd;
     text-align: right;
     float: right;
-    font-size: 75%;
 }
 .btn:hover {
     color: #0B66C7;
@@ -146,9 +143,6 @@ nav {
     border: 1px hidden;
     border-radius: 10px;
     color: #666666;
-    font-size: 165%;
-    padding: 10px 15px;
-    margin: 10px 10px 10px 10px;
     text-decoration: none;
   }
   .details a:hover {
@@ -161,3 +155,395 @@ nav {
     background-color: #E0E0E0;
     border: 1px solid #E0E0E0;
   }
+
+
+@media only screen 
+and (min-device-width: 0px)  {
+  .experienceMainDiv {
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .experienceContentAdjustment {
+    padding: 5px;
+  }
+  .logo1 {
+    padding-right: 10px;
+    padding-bottom: 75px;
+    max-width: 50px;
+  }
+  .con {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .con h2 {
+    font-size: 85%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 85%;
+  }
+  .conHead1 {
+    font-weight: 500;
+    font-size: 85%;
+    padding-left: 55px;
+  }
+  .date1 {
+    font-size: 60%;
+    padding-left: 25px;
+  }
+  .conParagraph {
+    padding-left: 25px;
+    padding-right: 50px;
+    font-size: 85%;
+  }
+  .date2 {
+    font-size: 60%;
+    padding-left: 55px;
+  }
+  .conParagraph1 {
+    padding-left: 55px;
+    padding-right: 50px;
+    font-size: 85%;
+  }
+  .btn {
+    font-size: 75%;
+    float: none;
+  }
+  .details a {
+    font-size: 65%;
+    padding: 10px 55px;
+    margin: 5px 5px 5px 5px;
+  }
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .experienceMainDiv {
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .experienceContentAdjustment {
+    padding: 5px;
+  }
+  .logo1 {
+    padding-right: 10px;
+    padding-bottom: 75px;
+    max-width: 50px;
+  }
+  .con {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .con h2 {
+    font-size: 85%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 85%;
+  }
+  .conHead1 {
+    font-weight: 500;
+    font-size: 85%;
+    padding-left: 55px;
+  }
+  .date1 {
+    font-size: 60%;
+    padding-left: 25px;
+  }
+  .conParagraph {
+    padding-left: 25px;
+    padding-right: 50px;
+    font-size: 85%;
+  }
+  .date2 {
+    font-size: 60%;
+    padding-left: 55px;
+  }
+  .conParagraph1 {
+    padding-left: 55px;
+    padding-right: 50px;
+    font-size: 85%;
+  }
+  .btn {
+    font-size: 75%;
+    float: none;
+  }
+  .details a {
+    font-size: 65%;
+    padding: 10px 55px;
+    margin: 5px 5px 5px 5px;
+  }
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .experienceMainDiv {
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .experienceContentAdjustment {
+    padding: 5px;
+  }
+  .logo1 {
+    padding-right: 10px;
+    padding-bottom: 75px;
+    max-width: 50px;
+  }
+  .con {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .con h2 {
+    font-size: 85%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 85%;
+  }
+  .conHead1 {
+    font-weight: 500;
+    font-size: 85%;
+    padding-left: 55px;
+  }
+  .date1 {
+    font-size: 60%;
+    padding-left: 25px;
+  }
+  .conParagraph {
+    padding-left: 25px;
+    padding-right: 50px;
+    font-size: 80%;
+  }
+  .date2 {
+    font-size: 60%;
+    padding-left: 55px;
+  }
+  .conParagraph1 {
+    padding-left: 55px;
+    padding-right: 50px;
+    font-size: 80%;
+  }
+  .btn {
+    font-size: 75%;
+    float: none;
+  }
+  .details a {
+    font-size: 65%;
+    padding: 10px 55px;
+    margin: 5px 5px 5px 5px;
+  }
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .experienceMainDiv {
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .experienceContentAdjustment {
+    padding: 5px;
+  }
+  .logo1 {
+    padding-right: 10px;
+    padding-bottom: 75px;
+    max-width: 50px;
+  }
+  .con {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .con h2 {
+    font-size: 85%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 85%;
+  }
+  .conHead1 {
+    font-weight: 500;
+    font-size: 85%;
+    padding-left: 55px;
+  }
+  .date1 {
+    font-size: 60%;
+    padding-left: 25px;
+  }
+  .conParagraph {
+    padding-left: 25px;
+    padding-right: 50px;
+    font-size: 85%;
+  }
+  .date2 {
+    font-size: 60%;
+    padding-left: 55px;
+  }
+  .conParagraph1 {
+    padding-left: 55px;
+    padding-right: 50px;
+    font-size: 85%;
+  }
+  .btn {
+    font-size: 75%;
+    float: right;
+  }
+  .details a {
+    font-size: 65%;
+    padding: 10px 55px;
+    margin: 5px 5px 5px 5px;
+  }
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .experienceMainDiv {
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .experienceContentAdjustment {
+    padding: 5px;
+  }
+  .logo1 {
+    padding-right: 10px;
+    padding-bottom: 75px;
+    max-width: 50px;
+  }
+  .con {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .con h2 {
+    font-size: 90%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 95%;
+  }
+  .conHead1 {
+    font-weight: 500;
+    font-size: 95%;
+    padding-left: 55px;
+  }
+  .date1 {
+    font-size: 70%;
+    padding-left: 25px;
+  }
+  .conParagraph {
+    padding-left: 25px;
+    padding-right: 50px;
+    font-size: 95%;
+  }
+  .date2 {
+    font-size: 70%;
+    padding-left: 55px;
+  }
+  .conParagraph1 {
+    padding-left: 55px;
+    padding-right: 50px;
+    font-size: 95%;
+  }
+  .btn {
+    font-size: 85%;
+    float: right;
+  }
+  .details a {
+    font-size: 105%;
+    padding: 10px 10px;
+    margin-left: 55px;
+    margin-top: 255px;
+  }
+  h1 {
+    font-size: 140%;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .experienceMainDiv {
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .experienceContentAdjustment {
+    padding: 5px;
+  }
+  .logo1 {
+    padding-right: 25px;
+    padding-bottom: 200px;
+    max-width: 100px;
+  }
+  .con {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .con h2 {
+    font-size: 205%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 205%;
+  }
+  .conHead1 {
+    font-weight: 500;
+    font-size: 205%;
+    padding-left: 125px;
+  }
+  .date1 {
+    font-size: 205%;
+    padding-left: 125px;
+  }
+  .conParagraph {
+    padding-left: 125px;
+    padding-right: 50px;
+    font-size: 205%;
+  }
+  .date2 {
+    font-size: 205%;
+    padding-left: 125px;
+  }
+  .conParagraph1 {
+    padding-left: 125px;
+    padding-right: 50px;
+    font-size: 205%;
+  }
+  .btn {
+    font-size: 105%;
+    float: right;
+  }
+  .details a {
+    font-size: 205%;
+    padding: 10px 125px;
+    margin: 5px 5px 5px 5px;
+  }
+  h1 {
+    font-size: 220%;
+  }
+}

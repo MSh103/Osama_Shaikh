@@ -60,21 +60,20 @@ nav {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+
+
   .SummaryHeader {
     border: solid 1px #ffffffdf;
     border-radius: 20px;
     background-color: #ffffffdf;
     color: black;
-    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
   }
   .SummarySubHeader {
     text-align: center;
     color: #632423;
-    font-size: 250%;
-    font-weight: 800;
   }
   .SummaryHead {
     background-color: #EEECE1;
@@ -82,12 +81,147 @@ nav {
     color: #632423;
   }
   .SummaryParagraph {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 150%;
     color: #632423;
   }
   .SummaryBreakLine {
     border: 2px solid #632423;
-    width: 85%;
   }
+
+
+@media only screen 
+and (min-device-width: 0px)  {
+  .SummaryHeader {
+    width: 95%;
+    margin-top: 25px;
+  }
+  .SummarySubHeader {
+    font-size: 150%;
+    font-weight: 800;
+  }
+  .SummaryParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 80%;
+  }
+  .SummaryBreakLine {
+    width: 80%;
+  }
+  .SummaryHead {
+    font-size: 70%;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .SummaryHeader {
+    width: 95%;
+    margin-top: 25px;
+  }
+  .SummarySubHeader {
+    font-size: 150%;
+    font-weight: 800;
+  }
+  .SummaryParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 80%;
+  }
+  .SummaryBreakLine {
+    width: 80%;
+  }
+  .SummaryHead {
+    font-size: 70%;
+  }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .SummaryHeader {
+    width: 90%;
+    margin-top: 25px;
+  }
+  .SummarySubHeader {
+    font-size: 170%;
+    font-weight: 800;
+  }
+  .SummaryParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 90%;
+  }
+  .SummaryBreakLine {
+    width: 80%;
+  }
+  .SummaryHead {
+    font-size: 80%;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .SummaryHeader {
+    width: 90%;
+    margin-top: 25px;
+  }
+  .SummarySubHeader {
+    font-size: 170%;
+    font-weight: 800;
+  }
+  .SummaryParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 100%;
+  }
+  .SummaryBreakLine {
+    width: 80%;
+  }
+  .SummaryHead {
+    font-size: 100%;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .SummaryHeader {
+    width: 80%;
+    margin-top: 25px;
+  }
+  .SummarySubHeader {
+    font-size: 200%;
+    font-weight: 800;
+  }
+  .SummaryParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 110%;
+  }
+  .SummaryBreakLine {
+    width: 80%;
+  }
+  .SummaryHead {
+    font-size: 120%;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .SummaryHeader {
+    width: 70%;
+    margin-top: 25px;
+  }
+  .SummarySubHeader {
+    font-size: 270%;
+    font-weight: 800;
+  }
+  .SummaryParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 210%;
+  }
+  .SummaryBreakLine {
+    width: 80%;
+  }
+  .SummaryHead {
+    font-size: 210%;
+  }
+}

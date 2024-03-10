@@ -65,20 +65,141 @@ nav {
     border: 1px solid white;
     border-radius: 15px;
     background-color: white;
-    padding: 20px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+@media only screen 
+and (min-device-width: 0px)  {
+  .exper4 {
+    padding-top:    20px;
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-bottom: 20px;
     margin-bottom: 22.5%;
-    display: block;
-    width: 80%;
+    width: 85%;
     padding-bottom: 20px;
   }
   .con {
-    padding-left:  25px;
-    padding-right: 25px;
+    padding-right: 5px;
   }
   .opel3 {
-    padding-left: 30px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .exper4 {
+    padding-top:    20px;
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-bottom: 20px;
+    margin-bottom: 22.5%;
+    width: 85%;
+    padding-bottom: 20px;
+  }
+  .con {
+    padding-right: 5px;
+  }
+  .opel3 {
+    font-weight: 300;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .exper4 {
+    padding-top:    20px;
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-bottom: 20px;
+    margin-bottom: 22.5%;
+    width: 80%;
+  }
+  .con {
+    padding-right: 5px;
+  }
+  .opel3 {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .exper4 {
+    padding-top:    20px;
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-bottom: 20px;
+    margin-bottom: 22.5%;
+    width: 70%;
+  }
+  .con {
+    padding-right: 5px;
+  }
+  .opel3 {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .exper4 {
+    padding-top:    20px;
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-bottom: 20px;
+    margin-bottom: 22.5%;
+    width: 60%;
+  }
+  .con {
+    padding-right: 5px;
+  }
+  .opel3 {
     font-weight: 300;
     font-size: 22px;
   }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .exper4 {
+    padding-top:    20px;
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-bottom: 20px;
+    margin-bottom: 22.5%;
+    width: 50%;
+  }
+  .con {
+    padding-right: 5px;
+  }
+  .opel3 {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}

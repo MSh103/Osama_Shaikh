@@ -65,38 +65,234 @@ nav {
     border: 2px solid #ffffff;
     border-radius: 15px;
     background-color: #ffffff;
-    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
     display: block;
-    width: 85%;
+  }
+  .projectsContentAdjustment {
+    text-align: left;
+  }
+  .con h2 {
+    font-weight: 300;
+  }
+  .date {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.351);
+    font-weight: 300;
+  }
+
+@media only screen 
+and (min-device-width: 0px)  {
+  .projectsMainDiv {
+    margin-bottom: 5%;
+    width: 75%;
     padding-bottom: 25px;
     padding-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
   }
   .projectsContentAdjustment {
-    text-align: left;
-    padding: 25px;
+    padding: 0px;
   }
   .con {
-    padding-left:  25px;
+    padding-left:  0;
     padding-right: 25px;
+  }
+  .date {
+    font-size: 90%;
+  }
+  .logor5 {
+    width: 14px;
+    padding-right: 10px;
+  }
+  .con h2 {
+    font-size: 80%;
   }
   .conHead {
     font-weight: 500;
+    font-size: 95%;
   }
-  .con h2 {
-    font-weight: 300;
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .projectsMainDiv {
+    margin-bottom: 5%;
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .projectsContentAdjustment {
+    padding: 0px;
+  }
+  .con {
+    padding-left:  0;
+    padding-right: 25px;
   }
   .date {
-    font-size: 125%;
-    color: rgba(0, 0, 0, 0.351);
-    text-align: left;
-    font-weight: 300;
+    font-size: 90%;
+  }
+  .logor5 {
+    width: 14px;
+    padding-right: 10px;
+  }
+  .con h2 {
+    font-size: 80%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 95%;
+  }
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .projectsMainDiv {
+    margin-bottom: 5%;
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .projectsContentAdjustment {
+    padding: 0px;
+  }
+  .con {
+    padding-left:  0;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 90%;
+  }
+  .logor5 {
+    width: 14px;
+    padding-right: 10px;
+  }
+  .con h2 {
+    font-size: 80%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 95%;
+  }
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .projectsMainDiv {
+    margin-bottom: 5%;
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .projectsContentAdjustment {
+    padding: 0px;
+  }
+  .con {
+    padding-left:  0;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 95%;
+  }
+  .logor5 {
+    width: 18px;
+    padding-right: 10px;
+  }
+  .con h2 {
+    font-size: 85%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 130%;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .projectsMainDiv {
+    margin-bottom: 5%;
+    width: 75%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .projectsContentAdjustment {
+    padding: 0px;
+  }
+  .con {
+    padding-left:  0;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 95%;
   }
   .logor5 {
     width: 24px;
     padding-right: 10px;
   }
+  .con h2 {
+    font-size: 90%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 150%;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .projectsMainDiv {
+    margin-bottom: 5%;
+    width: 80%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .projectsContentAdjustment {
+    padding: 0px;
+  }
+  .con {
+    padding-left:  0;
+    padding-right: 25px;
+  }
+  .date {
+    font-size: 150%;
+  }
+  .logor5 {
+    width: 28px;
+    padding-right: 10px;
+  }
+  .con h2 {
+    font-size: 150%;
+  }
+  .conHead {
+    font-weight: 500;
+    font-size: 200%;
+  }
+  h1 {
+    font-size: 200%;
+  }
+}

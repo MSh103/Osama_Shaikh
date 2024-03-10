@@ -60,28 +60,141 @@ nav {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+
   .AboutHeader {
     color: black;
     border: 2px solid #ffffff;
     border-radius: 15px;
     background-color: #ffffff;
-    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
     display: block;
-    width: 80%;
-    padding-bottom: 20px;
   }
   .AboutHead {
-    padding-top: 5px;
-    padding-left: 25px;
     font-weight: 800;
   }
   .AboutBodyHead {
-    padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 30px;
     font-weight: 500;
-    font-size: 155%;
   }
+
+
+@media only screen 
+and (min-device-width: 0px)  {
+  .AboutHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 75%;
+  }
+  .AboutHead {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 100%;
+  }
+  .AboutBodyHead {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 75%;
+  }
+}
+
+@media only screen
+and (min-device-width: 350px) {
+  .AboutHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 75%;
+  }
+  .AboutHead {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 100%;
+  }
+  .AboutBodyHead {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 75%;
+  }
+}
+
+@media only screen
+and (min-device-width: 465px) {
+  .AboutHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 75%;
+  }
+  .AboutHead {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 100%;
+  }
+  .AboutBodyHead {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 75%;
+  }
+}
+
+@media only screen
+and (min-device-width: 840px) {
+  .AboutHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 75%;
+  }
+  .AboutHead {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 130%;
+  }
+  .AboutBodyHead {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 95%;
+  }
+}
+
+@media only screen 
+and (min-device-width: 1123px) {
+  .AboutHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 75%;
+  }
+  .AboutHead {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 160%;
+  }
+  .AboutBodyHead {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 115%;
+  }
+}
+
+@media only screen
+and (min-device-width: 1925px) {
+  .AboutHeader {
+    padding: 20px;
+    margin-bottom: 5%;
+    width: 55%;
+  }
+  .AboutHead {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 200%;
+  }
+  .AboutBodyHead {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 175%;
+  }
+}
