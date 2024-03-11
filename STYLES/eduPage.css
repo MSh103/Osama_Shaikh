@@ -74,6 +74,10 @@ nav {
     color: rgba(0, 0, 0, 0.351);
     text-align: left;
   }
+  .date1 {
+    color: rgba(0, 0, 0, 0.351);
+    text-align: left;
+  }
   .eduHeader {
     color: black;
     border: 2px solid #ffffff;
@@ -103,8 +107,12 @@ and (min-device-width: 0px)  {
     padding-right: 25px;
   }
   .date {
-    font-size: 125%;
-    margin-left: 75px;
+    font-size: 100%;
+    margin-left: 50px;
+  }
+  .date1 {
+    font-size: 100%;
+    margin-left: 50px;
   }
   .eduHeader {
     padding: 20px;
@@ -113,15 +121,16 @@ and (min-device-width: 0px)  {
     padding-bottom: 20px;
   }
   .jik {
-    margin-left: 30px;
+    margin-left: 10px;
+    font-size: 100%;
   }
   .hihs {
-    margin-left: 75px;
+    margin-left: 50px;
     margin-right: 20px;
-    font-size: 150%;
+    font-size: 100%;
   }
   .opl {
-    max-width: 60px;
+    max-width: 30px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 50px;
@@ -135,8 +144,12 @@ and (min-device-width: 350px) {
     padding-right: 25px;
   }
   .date {
-    font-size: 125%;
-    margin-left: 75px;
+    font-size: 100%;
+    margin-left: 55px;
+  }
+  .date1 {
+    font-size: 100%;
+    margin-left: 55px;
   }
   .eduHeader {
     padding: 20px;
@@ -145,15 +158,16 @@ and (min-device-width: 350px) {
     padding-bottom: 20px;
   }
   .jik {
-    margin-left: 30px;
+    margin-left: 10px;
+    font-size: 100%;
   }
   .hihs {
-    margin-left: 75px;
+    margin-left: 50px;
     margin-right: 20px;
-    font-size: 150%;
+    font-size: 100%;
   }
   .opl {
-    max-width: 60px;
+    max-width: 30px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -166,8 +180,12 @@ and (min-device-width: 465px) {
     padding-right: 25px;
   }
   .date {
-    font-size: 125%;
-    margin-left: 75px;
+    font-size: 100%;
+    margin-left: 50px;
+  }
+  .date1 {
+    font-size: 100%;
+    margin-left: 70px;
   }
   .eduHeader {
     padding: 20px;
@@ -176,15 +194,16 @@ and (min-device-width: 465px) {
     padding-bottom: 20px;
   }
   .jik {
-    margin-left: 30px;
+    margin-left: 10px;
+    font-size: 120%;
   }
   .hihs {
-    margin-left: 75px;
+    margin-left: 50px;
     margin-right: 20px;
-    font-size: 150%;
+    font-size: 100%;
   }
   .opl {
-    max-width: 60px;
+    max-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -197,27 +216,33 @@ and (min-device-width: 840px) {
     padding-right: 25px;
   }
   .date {
-    font-size: 125%;
-    margin-left: 75px;
+    font-size: 100%;
+    margin-left: 50px;
+  }
+  .date1 {
+    font-size: 100%;
+    margin-left: 70px;
   }
   .eduHeader {
     padding: 20px;
     margin-bottom: 5%;
-    width: 80%;
+    width: 75%;
     padding-bottom: 20px;
   }
   .jik {
-    margin-left: 30px;
+    margin-left: 10px;
+    font-size: 130%;
   }
   .hihs {
-    margin-left: 75px;
+    margin-left: 50px;
     margin-right: 20px;
-    font-size: 150%;
+    font-size: 100%;
   }
   .opl {
-    max-width: 60px;
+    max-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 80px;
   }
 }
 
@@ -228,25 +253,30 @@ and (min-device-width: 1123px) {
     padding-right: 25px;
   }
   .date {
-    font-size: 125%;
-    margin-left: 75px;
+    font-size: 100%;
+    margin-left: 50px;
+  }
+  .date1 {
+    font-size: 100%;
+    margin-left: 70px;
   }
   .eduHeader {
     padding: 20px;
     margin-bottom: 5%;
-    width: 80%;
+    width: 70%;
     padding-bottom: 20px;
   }
   .jik {
-    margin-left: 30px;
+    margin-left: 10px;
+    font-size: 130%;
   }
   .hihs {
-    margin-left: 75px;
+    margin-left: 50px;
     margin-right: 20px;
-    font-size: 150%;
+    font-size: 100%;
   }
   .opl {
-    max-width: 60px;
+    max-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -259,25 +289,30 @@ and (min-device-width: 1925px) {
     padding-right: 25px;
   }
   .date {
-    font-size: 125%;
-    margin-left: 75px;
+    font-size: 200%;
+    margin-left: 100px;
+  }
+  .date1 {
+    font-size: 200%;
+    margin-left: 80px;
   }
   .eduHeader {
     padding: 20px;
     margin-bottom: 5%;
-    width: 80%;
+    width: 60%;
     padding-bottom: 20px;
   }
   .jik {
-    margin-left: 30px;
+    margin-left: 10px;
+    font-size: 200%;
   }
   .hihs {
-    margin-left: 75px;
+    margin-left: 50px;
     margin-right: 20px;
-    font-size: 150%;
+    font-size: 200%;
   }
   .opl {
-    max-width: 60px;
+    max-width: 80px;
     margin-left: 10px;
     margin-right: 10px;
   }
