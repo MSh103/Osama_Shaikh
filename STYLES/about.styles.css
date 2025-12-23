@@ -1,0 +1,118 @@
+
+main
+{
+    display: block;
+}
+
+#aboutContainer {
+    margin-top: 2.5rem;
+    background-color: var(--bg-light);
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    border-top: var(--bg) solid 3px;
+    padding: 4rem 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutText h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    padding-left: 0.5rem;
+}
+
+#aboutText p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+@media only screen and (max-width: 3445px) 
+{
+}
+
+@media only screen and (max-width: 1445px) 
+{
+}
+
+@media only screen and (max-width: 1030px)
+{
+    #aboutContainer {
+        padding: 2rem 3rem;
+        width: 80%;
+    }
+
+    #aboutText h1 {
+        font-size: 1.3rem;
+    }
+
+    #aboutText p {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    #aboutContainer {
+        padding: 2rem 3rem;
+        width: 90%;
+    }
+
+    #aboutText h1 {
+        font-size: 1.3rem;
+    }
+
+    #aboutText p {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 430px)
+{
+    #aboutContainer {
+        padding: 2rem 2rem;
+        width: 90%;
+    }
+
+    #aboutText h1 {
+        font-size: 1.1rem;
+    }
+
+    #aboutText p {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+    #aboutContainer {
+        padding: 2rem 2rem;
+        width: 95%;
+    }
+
+    #aboutText h1 {
+        font-size: 1.1rem;
+    }
+
+    #aboutText p {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 325px)
+{
+    #aboutContainer {
+        padding: 2rem 2rem;
+        width: 95%;
+    }
+
+    #aboutText h1 {
+        font-size: 1.1rem;
+    }
+
+    #aboutText p {
+        font-size: 0.6rem;
+    }
+}

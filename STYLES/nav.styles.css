@@ -127,7 +127,7 @@
 .side-menu {
     position: absolute;
     width: 15rem;
-    left: 5%;
+    left: 15%;
     top: 10%;
 }
 
@@ -156,7 +156,7 @@
 .side-socials {
     position: absolute;
     bottom: 2rem;
-    left: 5%;
+    left: 15%;
     display: flex;
     font-size: 2rem;
     gap: 1.5rem;
@@ -451,7 +451,9 @@ body[lang="en"] #american {
 
 @media only screen and (max-width: 800px)
 {
-
+    .side-menu {
+        left: 10%;
+    }
 }
 
 @media only screen and (max-width: 430px)
@@ -496,6 +498,10 @@ body[lang="en"] #american {
     .navBar .buttonWrapper {
         right: 2%;
         transform: translateX(-2%);
+    }
+
+    .side-menu {
+        left: 15%;
     }
 
 }
@@ -547,9 +553,12 @@ body[lang="en"] #american {
         justify-content: space-evenly;
     }
 
+    .side-menu {
+        left: 15%;
+    }
 }
 
-@media only screen and (max-width: 325px)
+@media only screen and (max-width: 324px)
 {
     .navBar h1 {
         font-size: 0.9rem !important;
@@ -570,6 +579,10 @@ body[lang="en"] #american {
         gap: 0rem !important;
         height: 1.8rem !important;
         width: auto !important;
+    }
+
+    .side-menu {
+        left: 15%;
     }
 }
 
