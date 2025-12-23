@@ -1,0 +1,105 @@
+footer {
+    display: flex;
+    background: var(--bg-light);
+    width: 100%;
+    padding: 1rem 1.3rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    font-size: 1.22rem;
+    justify-content: space-between;
+}
+
+footer * {
+    cursor: default;
+}
+
+footer div {
+    display: block;
+    gap: 0.2rem;
+}
+
+footer h1 {
+    font-size: 0.8rem;
+    height: 0.8rem;
+}
+
+footer #dev {
+    width: 25%;
+    margin-left: auto;
+}
+
+footer #dev h1 {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+footer div a {
+    margin-right: 0rem;
+}
+
+footer #title {
+    width: 25%;
+    text-align: center;
+}
+
+footer #title hr {
+    width: 80%;
+    margin: 0.2rem auto;
+}
+
+@media only screen and (max-width: 3445px) {
+    footer h1 {
+        font-size: 0.8rem;
+    }
+    footer #title {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1445px) {
+    footer h1 {
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 1030px)
+{
+    footer h1 {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+}
+
+@media only screen and (max-width: 430px)
+{
+    footer h1 {
+        font-size: 0.5rem;
+    }
+    footer div a i {
+        font-size: 0.75rem;
+        height: 0.2rem !important;
+    }
+
+    footer #title {
+        width: 55%;
+    }
+
+    footer #dev {
+        width: 40%;
+    }   
+
+    footer {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+}
+
+@media only screen and (max-width: 325px)
+{
+}

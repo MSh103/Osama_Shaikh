@@ -1,0 +1,575 @@
+.navBar {
+    display: flex;
+    background: var(--bg);
+    padding: 1rem 2rem;
+    border: var(--border-card);
+    border-top: 1px solid var(--highlight);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 500;
+}
+
+.navBar h1 {
+    font-family: "Saudi";
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.navBar .buttonWrapper button
+{
+    box-shadow: none;
+    background-color: var(--bg);
+    border-top: solid 1px var(--bg);
+}
+
+.navBar .buttonWrapper button:active
+{
+    border-top: solid 1px var(--highlight);
+}
+
+.navBar .buttonWrapper button:active .icon
+{
+    stroke: var(--secondary);
+}
+
+
+.burger
+{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    position: relative;
+}
+
+.burger-line
+{
+    width: 24px;
+    height: 2px;
+    background: var(--text-muted);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.burger-line::before,
+.burger-line::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: var(--text-muted);
+    transition: 0.3s ease;
+}
+.burger-line::before { top: -8px; }
+.burger-line::after  { top:  8px; }
+
+.burger:hover .burger-line {
+    background: var(--text);
+}
+
+.burger:hover .burger-line:before,
+.burger:hover .burger-line:after {
+    background: var(--text);
+}
+
+/* BURGER → X */
+.burger.open .burger-line {
+    background: transparent;
+    z-index: 2000;
+}
+.burger.open .burger-line::before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: var(--primary);
+}
+.burger.open .burger-line::after {
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: var(--primary);
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    /* This is the effect you want */
+    opacity: 0;
+    transform: translateX(-20px); /* subtle slide */
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    display: flex;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.nav-overlay.show {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* LEFT MENU */
+.side-menu {
+    position: absolute;
+    width: 15rem;
+    left: 5%;
+    top: 10%;
+}
+
+.side-menu a {
+    display: block;
+    font-size: 22px;
+    color: var(--text);
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+
+.side-menu a.active {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.side-menu a:hover {
+    color: var(--secondary);
+}
+
+.side-menu a.active:hover {
+    color: var(--highlight);
+}
+
+.side-socials {
+    position: absolute;
+    bottom: 2rem;
+    left: 5%;
+    display: flex;
+    font-size: 2rem;
+    gap: 1.5rem;
+}
+
+.navBar h1 {
+    font-family: "Saudi";
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+#navWrapper {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.navBar #navWrapper .active {
+    width: auto;
+    height: 2.75rem;
+    border-bottom: 0.35rem solid var(--secondary);
+    text-align: center;
+    padding: 0.65rem;
+    margin-left: 1rem;
+    border-radius: 0.15rem;
+}
+
+.navBar #navWrapper .active:hover {
+    border-bottom: 0.35rem solid var(--text);
+    color: var(--text-muted);
+    cursor: default;
+}
+
+.navBar #navWrapper div {
+    width: auto;
+    height: 2.75rem;
+    border-bottom: 0.35rem solid var(--primary);
+    text-align: center;
+    padding: 0.65rem;
+    margin-left: 1rem;
+    border-radius: 0.15rem;
+}
+
+.navBar #navWrapper div:hover {
+    border-bottom: 0.35rem solid var(--secondary);
+    color: var(--text-muted);
+    cursor: default;
+}
+
+.navBar #dropdownWrapper {
+    display:none;
+}
+
+.navBar .icon {
+    stroke: var(--primary);
+    width: 2rem;
+}
+
+.navBar button:hover .icon {
+    stroke: var(--text);
+}
+
+.navBar button {
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+.navBar button:hover {
+    cursor: default;
+}
+
+.navBar .buttonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 0.2rem;
+    margin-left: auto; /* Pushes it to the right */
+    gap: 0.5rem; /* Optional: space between buttons */
+}
+
+.navBar .lang {
+    width: 4rem;
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar .flags-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.navBar .flag {
+    width: auto;
+    height: 2rem; /* Fixed height for both flags */
+    max-width: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+#Saudi {
+    display: none;
+    max-width: 2.45rem;
+}
+
+#american {
+    display: none;
+    max-width: 2.55rem; /* Ensure the American flag doesn't exceed container width */
+}
+
+.ar {
+    direction: rtl;
+    unicode-bidi: isolate;
+}
+
+body[lang="ar"] .ar {
+    font-family: "Saudi";
+    display: inherit;
+}
+
+body[lang="ar"] .en {
+    display: none;
+}
+
+body[lang="en"] .en {
+    display: inherit;
+}
+
+body[lang="en"] .ar {
+    display: none;
+}
+
+
+body[lang="ar"] #american {
+    display: flex;
+}
+
+body[lang="ar"] #Saudi {
+    display: none;
+}
+
+body[lang="en"] #Saudi {
+    display: flex;
+}
+
+body[lang="en"] #american {
+    display: none;
+}
+
+.navBar h1:hover {
+    color: var(--highlight);
+}
+
+.navBar h1
+{
+    transition: all 0.1s ease-in-out 0.05s;
+}
+.navBar #navWrapper div,
+.navBar button,
+.navBar .icon,
+.navBar .flag {
+    transition: all 0.2s ease-in-out 0.05s; 
+}
+
+
+
+
+@media only screen and (max-width: 3445px) 
+{
+}
+
+@media only screen and (max-width: 1445px) 
+{
+}
+
+@media only screen and (max-width: 1030px)
+{
+    .navBar {
+        display: flex; /*  allow dropdowns to appear */
+        position: relative; /* needed for absolute children */
+        z-index: 10;
+        overflow: visible;
+    }
+
+    .navBar #navWrapper {
+        display: none;
+    }
+
+    .navBar #dropdownWrapper {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: default;
+        z-index: 998;
+    }   
+
+    .navBar .dropdown-content {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px) scaleY(0.9);
+        transform-origin: top;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        position: absolute; /* Ensure it's absolutely positioned */
+        top: 100%; /* just below the dropdown button */
+        left: 0;
+        background: var(--gradient);
+        border-radius: 0.5rem;
+        box-shadow: var(--shadow);
+        padding: 0.5rem 0;
+        min-width: 100%; /* or set your desired width */
+        z-index: 998;
+    }
+
+    #dropdownWrapper:hover .dropdown-content,
+    #dropdownWrapper .dropdown-content:hover {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0) scaleY(1);
+    }
+
+
+    #dropdownBtn {
+        width: 4.75rem;
+        border-bottom: 0.35rem solid var(--secondary);
+        border-radius: 0.15rem;
+        transition: border-bottom-color 0.3s ease, color 0.3s ease;
+    }
+    
+    #dropdownBtn p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    #dropdownBtn:hover {
+        border-bottom: 0.35rem solid var(--text);
+        color: var(--text-muted);
+        cursor: pointer;
+    }
+
+    .dropdown-content div {
+        width: 4.75rem;
+        border-bottom: 0.35rem solid var(--primary);
+        text-align: center;
+        border-radius: 0.15rem;
+        display:block;
+        z-index: 998;
+        transition: border-bottom-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dropdown-content p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .dropdown-content div:hover {
+        border-bottom: 0.35rem solid var(--secondary);
+        color: var(--text-muted);
+        cursor: pointer;
+    }
+
+    .dropdown-content div {
+        padding: 0.5rem 0;
+        cursor: pointer;
+    }
+
+    .navBar .buttonWrapper {
+        right: 10%;
+        transform: translateX(-10%);
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+
+}
+
+@media only screen and (max-width: 430px)
+{
+    .navBar h1 {
+        float: none !important;
+        font-size: 1.2rem !important;
+
+        direction: ltr;
+    }
+
+    .navBar button {
+        margin-left: 0 !important;
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    .navBar .icon {
+        width: 1.4rem !important;
+        height: auto !important;
+    }
+
+    .navBar .lang {
+        width: 1rem !important;
+        height: 2rem !important;
+    }
+
+    .navBar .flags-container {
+        width: 2rem !important;
+    }
+
+    .navBar button {
+        margin-left: 0 !important;
+        width: 2.2rem !important;
+        height: auto !important;
+    }
+
+    .navBar .lang {
+        width: 3rem !important;
+    }
+
+    .navBar .buttonWrapper {
+        right: 2%;
+        transform: translateX(-2%);
+    }
+
+}
+
+@media only screen and (max-width: 380px)
+{
+    .navBar {
+        padding: 1rem 1.4rem !important;
+    }
+
+    .navBar h1 {
+        float: none !important;
+        font-size: 1rem !important;
+        direction: ltr;
+        margin-left: 0px !important;
+    }
+
+    .navBar button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.6rem !important;
+        height: 1.6rem !important;
+    }
+
+    .navBar .lang {
+        width: 2.1rem !important;
+        height: 1.4rem !important; /* match button height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navBar .flag {
+        width: inherit !important;
+    }
+
+    .navBar .icon {
+        stroke: var(--primary);
+        width: 0.9rem !important;
+    }
+
+    .navBar .buttonWrapper {
+        right: 1%;
+        transform: translateX(-1%);
+        gap: 0rem !important;
+        height: 1.8rem !important;
+        width: auto !important;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media only screen and (max-width: 325px)
+{
+    .navBar h1 {
+        font-size: 0.9rem !important;
+    }
+
+    .navBar .lang {
+        width: 1.9rem !important;
+    }
+
+    .navBar button {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+
+    .navBar .buttonWrapper {
+        right: 0.7%;
+        transform: translateX(-0.7%);
+        gap: 0rem !important;
+        height: 1.8rem !important;
+        width: auto !important;
+    }
+}
+

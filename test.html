@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: 0.3s ease;
+  }
+
+  /* FIXED NAVBAR */
+  .navbar {
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1001;
+  }
+
+  .content {
+    padding-top: 70px;
+  }
+
+  /* BURGER */
+  .burger {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger-line {
+    width: 24px;
+    height: 2px;
+    background: #000;
+    position: relative;
+    transition: 0.3s ease;
+  }
+
+  .burger-line::before,
+  .burger-line::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transition: 0.3s ease;
+  }
+
+  .burger-line::before { top: -8px; }
+  .burger-line::after  { top:  8px; }
+
+  /* BURGER → X */
+  .burger.open .burger-line {
+    background: transparent;
+  }
+  .burger.open .burger-line::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .burger.open .burger-line::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* OVERLAY: fade + slide */
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: white;
+
+    /* This is the effect you want */
+    opacity: 0;
+    transform: translateX(-20px); /* subtle slide */
+    transition: opacity 0.35s ease, transform 0.35s ease;
+
+    display: flex;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .nav-overlay.show {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  /* LEFT MENU */
+  .side-menu {
+    width: 280px;
+    padding: 100px 20px;
+    border-right: 1px solid #eee;
+  }
+
+  .side-menu a {
+    display: block;
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+  }
+
+  .side-menu a:hover {
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV BAR -->
+<div class="navbar">
+  <div class="burger" id="burgerBtn">
+    <div class="burger-line"></div>
+  </div>
+</div>
+
+<!-- SOFT FADE OVERLAY -->
+<div class="nav-overlay" id="overlay">
+  <div class="side-menu">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<div class="content">
+  <h1 style="text-align:center;">Your page content</h1>
+  <p style="text-align:center;">Scroll or add content here...</p>
+</div>
+
+<script>
+  const burger = document.getElementById("burgerBtn");
+  const overlay = document.getElementById("overlay");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    overlay.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>

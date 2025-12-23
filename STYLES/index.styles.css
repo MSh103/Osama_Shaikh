@@ -1,0 +1,200 @@
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 6%;
+}
+
+#profileWrapper 
+{
+    margin-top: 2.5rem;
+    width: 47%;
+    border-radius: 5%;
+    padding: 0;
+}
+#profileWrapper img
+{
+    border-radius: inherit;
+    width: 100%;
+}
+#summary
+{
+    margin-top: 2.5rem;
+    background-color: var(--bg-light);
+    width: 47%;
+    border-radius: 5%;
+    box-shadow: var(--shadow);
+    border-top: var(--bg) solid 3px;
+    padding: 2rem 2rem;
+}
+
+#summary h1
+{
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+#summary #title
+{
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-align: center;
+}
+
+.description
+{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text);
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.bold 
+{
+    font-weight: 700;
+}
+
+#summary hr
+{
+    margin-top: 1rem;
+    border: none;
+    height: 1px;
+    background-color: var(--text-muted);
+}
+
+
+@media only screen and (max-width: 3445px) 
+{
+}
+
+@media only screen and (max-width: 1445px) 
+{
+    #summary
+    {
+        padding: 2rem 2rem;
+    }
+
+    #summary h1
+    {
+        font-size: 1.1rem;
+    }
+
+    #summary #title
+    {
+        font-size: 0.7rem;
+    }
+
+    #summary .description 
+    {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        margin-top: 0.5rem;
+    }
+    #summary hr
+    {
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 1030px)
+{
+    #summary
+    {
+        padding: 1.5rem 1.5rem;
+    }
+
+    #summary h1
+    {
+        font-size: 1.1rem;
+    }
+
+    #summary #title
+    {
+        font-size: 0.6rem;
+    }
+
+    #summary .description 
+    {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        margin-top: 0.5rem;
+    }
+    #summary hr
+    {
+        margin-top: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px)
+{
+    #summary
+    {
+        padding: 1.3rem;
+    }
+    #summary h1
+    {
+        font-size: 1rem;
+    }
+
+    #summary #title
+    {
+        font-size: 0.5rem;
+    }
+
+    #summary .description 
+    {
+        font-size: 0.5rem;
+        line-height: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 430px)
+{
+     main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div {
+        width: 90% !important;
+        margin-top: 1.5rem !important;
+    }   
+}
+
+@media only screen and (max-width: 380px)
+{
+    #summary
+    {
+        padding: 0.8rem;
+    }
+
+    #summary h1
+    {
+        font-size: 0.8rem;
+    }
+
+    #summary #title
+    {
+        font-size: 0.43rem;
+    }
+    #summary .description 
+    {
+        font-size: 0.43rem;
+        line-height: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 325px)
+{
+    main div {
+        width: 100% !important;
+        margin-top: 1.5rem !important;
+    }
+}
