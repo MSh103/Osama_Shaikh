@@ -4,7 +4,7 @@ main {
 
 .cardsContainer {
     margin-top: 2.5rem;
-    width: 80%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -28,17 +28,17 @@ main {
 }
 
 .card .Text {
-    width: 47%;
+    width: 63%;
 }
 
 .card .Info
 {
-    width: 47%;
+    width: 27%;
 }
 
 .Info img
 {
-    width: 50%;
+    width: inherit;
 }
 
 .Info p
@@ -49,11 +49,165 @@ main {
 .Text h1
 {
     font-size: 0.8rem;
+    color: var(--text);
 }
 .Text .description
 {
     font-size: 0.7rem;
-    color: var(--text);
+    color: var(--text-muted);
     line-height: 1rem;
     text-align: justify;
+}
+
+@media only screen and (max-width: 3445px) 
+{
+}
+
+@media only screen and (max-width: 1445px) 
+{
+}
+
+@media only screen and (max-width: 1030px)
+{
+
+}
+
+@media only screen and (max-width: 800px)
+{
+
+}
+
+@media only screen and (max-width: 430px)
+{
+    .cardsContainer, .Info, .Text, .card {
+        width: 100% !important;
+    }
+
+    .card {
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    .cardsContainer .card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Info, .Text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Info p {
+        font-size: 0.4rem;
+        text-align: center;
+    }
+
+    .Info img {
+        width: 50% !important;
+    }
+
+    .Text h1 {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .Text .description {
+        font-size: 0.5rem;
+        line-height: 0.5rem;
+    }
+
+    .Text ul li  {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+    .cardsContainer, .Info, .Text, .card {
+        width: 100% !important;
+    }
+
+    .card {
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    .cardsContainer .card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Info, .Text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Info p {
+        font-size: 0.4rem;
+        text-align: center;
+    }
+
+    .Info img {
+        width: 50% !important;
+    }
+
+    .Text h1 {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .Text .description {
+        font-size: 0.5rem;
+        line-height: 0.5rem;
+    }
+
+    .Text ul li  {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 325px)
+{
+    .cardsContainer, .Info, .Text, .card {
+        width: 100% !important;
+    }
+
+    .card {
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    .cardsContainer .card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Info, .Text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Info p {
+        font-size: 0.4rem;
+        text-align: center;
+    }
+
+    .Info img {
+        width: 50% !important;
+    }
+
+    .Text h1 {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .Text .description {
+        font-size: 0.4rem;
+        line-height: 0.5rem;
+    }
+
+    .Text ul li  {
+        font-size: 0.4rem;
+    }
 }

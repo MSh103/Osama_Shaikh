@@ -280,6 +280,13 @@ footer {
   text-align: right;
 }
 
+.separator {
+  border: none;
+  height: 1px;
+  background-color: var(--border);
+  display: none;
+}
+
 
 
 @media only screen and (max-width: 3445px) {
@@ -313,6 +320,10 @@ footer {
   body {
     max-width: min(90vw, 768px);
   }
+
+  .separator {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 430px)
@@ -320,11 +331,18 @@ footer {
   body {
     max-width: min(90vw, 400px);
   }
+  .separator {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 380px)
 {
   body {
     max-width: min(80vw, 370px);
+  }
+
+  .separator {
+    display: block;
   }
 }
