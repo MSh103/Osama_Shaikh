@@ -13,7 +13,8 @@ main {
     padding: 2rem 2rem;
 }
 
-.cardsContainer .card {
+.cardsContainer .card,
+.cardsContainer .cardCertificate {
     background-color: var(--bg);
     border-radius: 15px;
     box-shadow: none;
@@ -27,23 +28,26 @@ main {
     gap: 6%;
 }
 
-.card .Text {
+.card .Text,
+.cardCertificate .Text{
     width: 63%;
 }
 
-.card .Info
+.card .Info,
+.cardCertificate .Info
 {
     width: 27%;
 }
 
 .Info img
 {
-    width: inherit;
+    width: 55%;
 }
 
 .Info p
 {
     font-size: 0.6rem;
+    color: var(--text-muted);
 }
 
 .Text h1
@@ -57,6 +61,20 @@ main {
     color: var(--text-muted);
     line-height: 1rem;
     text-align: justify;
+}
+
+.cardCertificate .Text 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardCertificate .Text h1,
+.cardCertificate .Text p {
+    font-size: 1rem;
+    text-align: inherit;
 }
 
 @media only screen and (max-width: 3445px) 
@@ -120,6 +138,18 @@ main {
     .Text ul li  {
         font-size: 0.5rem;
     }
+
+    .cardCertificate .Text
+    {
+        padding: 1rem 0 0 0;
+    }
+
+    .cardCertificate .Text h1,
+    .cardCertificate .Text p {
+        font-size: 0.7rem;
+        text-align: inherit;
+        line-height: 1rem;
+    }
 }
 
 @media only screen and (max-width: 380px)
@@ -165,6 +195,18 @@ main {
     .Text ul li  {
         font-size: 0.5rem;
     }
+
+    .cardCertificate .Text
+    {
+        padding: 1rem 0 0 0;
+    }
+
+    .cardCertificate .Text h1,
+    .cardCertificate .Text p {
+        font-size: 0.7rem;
+        text-align: inherit;
+        line-height: 1rem;
+    }
 }
 
 @media only screen and (max-width: 325px)
@@ -209,5 +251,17 @@ main {
 
     .Text ul li  {
         font-size: 0.4rem;
+    }
+
+    .cardCertificate .Text
+    {
+        padding: 1rem 0 0 0;
+    }
+
+    .cardCertificate .Text h1,
+    .cardCertificate .Text p {
+        font-size: 0.7rem;
+        text-align: inherit;
+        line-height: 1rem;
     }
 }
