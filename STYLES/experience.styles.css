@@ -21,8 +21,7 @@ main {
     font-weight: bold;
 }
 
-.cardsContainer .card,
-.cardsContainer .cardCertificate {
+.cardsContainer .card {
     background-color: var(--bg);
     border-radius: 15px;
     box-shadow: none;
@@ -36,13 +35,15 @@ main {
     gap: 6%;
 }
 
-.card .Text,
-.cardCertificate .Text{
+.card .Text{
     width: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.card .Info,
-.cardCertificate .Info
+.card .Info
 {
     width: 27%;
 }
@@ -72,25 +73,6 @@ main {
     text-align: justify;
 }
 
-.cardCertificate .Text 
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.cardCertificate .Text h1,
-.cardCertificate .Text p {
-    font-size: 1rem;
-    text-align: inherit;
-}
-
-.cardCertificate .Text h1
-{
-    font-weight: bold;
-    color: var(--text);
-}
 
 .date {
     font-size: 0.7rem !important;
