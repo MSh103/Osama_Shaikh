@@ -1,0 +1,128 @@
+main {
+    display: block;
+}
+
+.main {
+    width: 100%;
+    background-color: var(--bg-light);
+    padding: 2rem 2.5rem;
+    margin: 2.5rem auto 4rem auto;
+    border-radius: 25px;
+    border-top: var(--bg) solid 3px;
+}
+
+.main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    text-align: center;
+    font-weight: bold;
+}
+
+.main .resumeEmbed
+{
+    width: 100%;
+    height: 80vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main .resumeEmbed embed
+{
+    width: 100%;
+    height: 100%;
+}
+
+.main .downloadButton
+{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .downloadButton button:hover
+{
+    background-color: var(--bg);
+    color: var(--primary);
+    transition: ease-in-out 0.3s;
+}
+
+.main .downloadButton button
+{
+    background-color: var(--bg-light);
+    color: var(--text);
+    box-shadow: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+@media only screen and (max-width: 3445px) 
+{
+}
+
+@media only screen and (max-width: 1445px) 
+{
+}
+
+@media only screen and (max-width: 1030px)
+{
+
+}
+
+@media only screen and (max-width: 800px)
+{
+
+}
+
+@media only screen and (max-width: 430px)
+{
+    .main {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        margin: 2.5rem auto 4rem auto;
+    }
+
+    .main h1 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .main .resumeEmbed
+    {
+        width: 90%;
+        height: 45vh;
+        margin-bottom: 1rem;
+    }
+
+    .main .downloadButton button
+    {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.7rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+    .main .resumeEmbed
+    {
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 325px)
+{
+    .main .resumeEmbed
+    {
+        width: 100%;
+        height: 30vh;
+    }
+}

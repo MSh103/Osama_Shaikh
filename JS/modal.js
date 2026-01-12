@@ -1,72 +1,60 @@
-var modal = document.getElementById("myModal");
+let slideIndex = 1;
+let slides = [];
 
-var img = document.getElementById("myImg00");
-var img1 = document.getElementById("myImg01");
-var img2 = document.getElementById("myImg02");
-var img3 = document.getElementById("myImg03");
-var img8 = document.getElementById("myImg08");
-var img10 = document.getElementById("myImg10");
-var img11 = document.getElementById("myImg11");
-var img12 = document.getElementById("myImg12");
+fetch("gallery.json")
+  .then(res => res.json())
+  .then(data => {
+    buildGallery(data.images);
+    showSlides(slideIndex);
+  })
+  .catch(err => console.error("Gallery JSON error:", err));
 
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
+function buildGallery(images)
+{
+  const container = document.getElementById("gallery");
+  const viewport = container.querySelector(".slideViewport");
+  const prevBtn = container.querySelector(".prev");
 
-var images = [img, img1, img2, img3, img8, img10, img11, img12];
+  images.forEach((img, index) => {
+    const slide = document.createElement("div");
+    slide.className = "slide";
+    slide.innerHTML = `
+      <div class="slideNumber"></div>
+      <div class="imgContainer"><img src="${img.src}" alt="${img.alt}" data-caption="${img.caption}"/></div>
+    `;
 
-function changeImage(direction) {
-  var currentImgIndex = parseInt(modalImg.dataset.index);
-  var nextImgIndex = currentImgIndex + direction;
-
-  if (nextImgIndex >= images.length) {
-    nextImgIndex = 0; // Loop back to the first image
-  } else if (nextImgIndex < 0) {
-    nextImgIndex = images.length - 1; // Loop back to the last image
-  }
-
-  modalImg.src = images[nextImgIndex].src;
-  modalImg.dataset.index = nextImgIndex;
-  captionText.innerHTML = images[nextImgIndex].alt;
-}
-
-function plusSide() {
-  changeImage(1);
-}
-
-function minusSide() {
-  changeImage(-1);
-}
-
-function openModal(index) {
-  modal.style.display = "block";
-  modalImg.src = images[index].src;
-  modalImg.dataset.index = index;
-  captionText.innerHTML = images[index].alt;
-
-  modal.appendChild(prevBtn);
-  modal.appendChild(nextBtn);
-}
-
-function closeModal() {
-  modal.style.display = "none";
-  modal.removeChild(prevBtn);
-  modal.removeChild(nextBtn);
-}
-
-images.forEach(function(image, index) {
-  image.addEventListener("click", function() {
-    openModal(index);
+    viewport.appendChild(slide);
   });
-});
 
-var span = document.getElementsByClassName("close")[0];
+  slides = document.getElementsByClassName("slide");
+}
 
-span.onclick = function() {
-  closeModal();
-};
+function updateSlide(n) 
+{
+  showSlides(slideIndex += n);
+}
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    closeModal();
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) 
+{
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let captionText = document.getElementById("caption");
+  if(n > slides.length) {slideIndex = 1}
+  if(n < 1) {slideIndex = slides.length}
+  for(i = 0; i < slides.length; i++)
+  {
+    slides[i].classList.remove("active");
   }
-};
+  slides[slideIndex-1].classList.add("active");
+
+  const img = slides[slideIndex-1].querySelector("img");
+  captionText.innerHTML = img ? img.dataset.caption : "";
+
+  const slideNo = slides[slideIndex-1].querySelector(".slideNumber");
+  slideNo.textContent = `${slideIndex} / ${slides.length}`;
+}
