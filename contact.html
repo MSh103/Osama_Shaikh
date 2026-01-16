@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="shortcut icon" href="IMAGES/maskable-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="IMAGES/maskable-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMAGES/maskable-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="IMAGES/maskable-icon.png">
+    <title>Contact Engr. Osama Shaikh</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="STYLES/globals.styles.css"> 
+    <link rel="stylesheet" href="STYLES/nav.styles.css"> 
+    <link rel="stylesheet" href="STYLES/footer.styles.css"> 
+
+    <link rel="stylesheet" href="STYLES/contact.styles.css">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/9f00e74124.js" crossorigin="anonymous"></script>
+
+    <script defer src="JS/nav.script.js"></script>
+    <script defer src="JS/contact.form.js"></script>
+</head>
+<body lang="en">
+    <nav>
+        <div class="navBar">
+            <h1 role="link" onclick="window.location.href='index.html'""> Engr. Osama Shaikh </h1>
+            <div class="buttonWrapper">
+                <button onclick="toggleView()">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10"></path><path d="M18.4 6.6a9 9 0 1  1-12.77.04"></path>
+                    </svg>
+                </button>
+            </div>
+            
+
+            <div class="burger" id="burgerBtn">
+        <div class="burger-line"></div>
+        <div class="nav-overlay" id="overlay">
+            <div class="side-menu">
+                <a href="index.html"                    >Home</a>
+                <a href="about.html"                    >About Me</a>
+                <a href="projects.html"                 >Projects & Certificates</a>
+                <a href="Experience.html"               >Experience</a>
+                <a href="Resume.html"                   >Resume</a>
+                <a href="Gallery.html"                  >Gallery</a>
+                <a href="contact.html"    class="active">Contact</a>
+            </div>
+            <div class="side-socials">
+                <a href="mailto:osama@oshaikh.sa"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/eng-r-osama-shaikh-93a5281a/"><i class="fa-brands fa-linkedin-in"></i></i></a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+
+    <main>
+       <div class="contact">
+            <h1>Contact Me</h1>
+            <br/>
+            <p>You can find me on linkedin and you can directly contact me via email or the contact form below.</p>
+
+            <form id="contactForm"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  data-netlify-recaptcha="true">
+
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="hp">
+                <input name="bot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+              </div>
+          
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="subject" rows="2" placeholder="Subject" required></textarea>
+              <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          
+              <div data-netlify-recaptcha="true"></div>
+          
+              <button data-netlify-recaptcha="true" type="submit">Send Message</button>
+            </form>
+
+
+       </div>
+       <div class="socials">
+
+       </div>
+    </main>
+
+    <section>
+        <!-- Alert container -->
+            <div id="formAlert" class="form-alert" role="alert">
+                <span id="formAlertText"></span>
+
+                <button type="button"
+                        class="alert-close"
+                        aria-label="Close alert">
+                &times;
+            </button>
+            </div>
+    </section>
+
+
+    <footer>
+        <div id="title">
+            <h1>2025 - Osama Shaikh - <a href="https://oshaikh.sa">oshaikh.sa</a> <hr/> Build Version: 2.0 </h1>
+        </div>
+        <div id="dev">
+            <h1>Developer:</h1>
+            <a href="mailto:mohammad@oshaikh.sa"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/MSh103" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
