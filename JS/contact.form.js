@@ -97,11 +97,16 @@ form.addEventListener("submit", async (e) => {
   // Submit to Netlify (stay on page)
   try {
     lastSubmitAt = now; // set before fetch to stop spam clicks
+    
+    const formData = new FormData(form);
 
-    const resp = await fetch("/", {
+    // extra safety: ensure Netlify sees the form name even with JS submit
+    formData.set("form-name", form.getAttribute("name"));
+
+    const resp = await fetch(form.getAttribute("action") || "/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(new FormData(form)).toString()
+      body: new URLSearchParams(formData).toString()
     });
 
     if (!resp.ok) throw new Error("Netlify rejected submission");
