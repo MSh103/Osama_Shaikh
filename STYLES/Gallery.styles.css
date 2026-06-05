@@ -46,6 +46,17 @@ main {
     transition: opacity 250ms ease, transform 250ms ease;
 }
 
+.WIP
+{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+    border-radius: 2rem;
+}
+
 .slide.active
 {
     opacity: 1;

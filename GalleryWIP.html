@@ -61,8 +61,21 @@
 
 
     <main>
-        <div class="WIP">
-            <img src="https://placehold.co/400?text=WIP" alt="WIP"/>
+        <div class="main">
+            <h1>Gallery</h1>
+            <hr class="separator"/>
+
+            <div class="container" id="gallery">
+                
+                <div class="slideViewport"></div>
+                
+                <a onclick="updateSlide(-1)" class="prev">&#10094;</a>
+                <a onclick="updateSlide(+1)" class="next">&#10095;</a>
+
+                <div class="captionContainer">
+                    <p id="caption"></p>
+                </div>
+            </div>
         </div>
     </main>
 
