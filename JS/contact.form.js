@@ -6,18 +6,27 @@ const alertCloseBtn = alertBox.querySelector(".alert-close");
 let alertTimer = null;
 
 function hideAlert() {
-  alertBox.style.display = "none";
-  alertBox.className = "form-alert";
-  alertText.textContent = "";
+  alertBox.classList.remove("show");
+
   clearTimeout(alertTimer);
+
+  setTimeout(() => {
+    alertText.textContent = "";
+    alertBox.classList.remove("success", "error");
+  }, 250);
 }
 
 function showAlert(message, type = "error", autoCloseMs = 5000) {
   clearTimeout(alertTimer);
 
   alertText.textContent = message;
-  alertBox.className = `form-alert ${type}`;
-  alertBox.style.display = "block";
+
+  alertBox.classList.remove("success", "error", "show");
+  alertBox.classList.add(type);
+
+  alertBox.classList.remove("show"); // restart animation
+  void alertBox.offsetWidth; // trigger reflow for restart animation
+  alertBox.classList.add("show");
 
   // Auto-close
   if (autoCloseMs > 0) {
@@ -50,7 +59,6 @@ function looksLikeEmail(email) {
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  alertBox.style.display = "none";
 
   const now = Date.now();
 
