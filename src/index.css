@@ -1,1 +1,115 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Saudi";
+    src: url("assets/fonts/SaudiWeb-Bold.woff2") format("woff2"),
+         url("assets/fonts/SaudiWeb-Bold.woff") format("woff"),
+         url("assets/fonts/Saudi-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal; 
+}
+
+@font-face {
+    font-family: "Saudi";
+    src: url("assets/fonts/SaudiWeb-Regular.woff2") format("woff2"),
+         url("assets/fonts/SaudiWeb-Regular.woff") format("woff"),
+         url("assets/fonts/Saudi-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+:root 
+{
+    --bg-dark: oklch(0.92 0 20);
+    --bg: oklch(0.96 0 20);
+    --bg-light: oklch(1 0 20);
+    --text: oklch(0.15 0 20);
+    --text-muted: oklch(0.4 0 20);
+    --highlight: oklch(1 0 20);
+    --border: oklch(0.6 0 20);
+    --border-muted: oklch(0.7 0 20);
+    --primary: oklch(0.4 0.1 20);
+    --secondary: oklch(0.4 0.1 200);
+    --danger: oklch(0.5 0.05 30);
+    --warning: oklch(0.5 0.05 100);
+    --success: oklch(0.5 0.05 160);
+    --info: oklch(0.5 0.05 260);
+    --shadow: 0px 2px 2px oklch(0 0 0 / 0.2), 0px 4px 4px oklch(0 0 0 / 0.1);
+}
+
+body {
+  margin: 1rem auto;
+  max-width: min(120vw, 1800px);
+  background: var(--bg-dark);
+  color: var(--text-muted);
+  font-family: "Montserrat", sans-serif;
+}
+
+.saudi-font
+{
+  font-family: "Saudi", sans-serif;
+}
+
+.monteserrat-font
+{
+  font-family: "Montserrat", sans-serif;
+}
+
+.border-nav
+{
+  border: var(--border-card);
+  border-top: 1px solid var(--highlight);
+}
+.boxshadow-nav
+{
+  box-shadow: var(--shadow);
+}
+
+@media only screen and (max-width: 3445px) {
+  body {
+    max-width: min(120vw, 1800px);
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  body {
+    max-width: min(120vw, 1445px);
+  }
+}
+
+@media only screen and (max-width: 1445px)
+{
+  body {
+    max-width: min(90vw, 1000px);
+  }
+}
+
+@media only screen and (max-width: 1030px)
+{
+  body {
+    max-width: min(90vw, 1000px);
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  body {
+    max-width: min(90vw, 768px);
+  }
+}
+
+@media only screen and (max-width: 430px)
+{
+  body {
+    max-width: min(90vw, 400px);
+  }
+}
+
+@media only screen and (max-width: 380px)
+{
+  body {
+    max-width: min(80vw, 370px);
+  }
+}
