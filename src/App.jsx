@@ -1,9 +1,12 @@
+import Navigation from "./components/Navigation";
 
 function App()
 {
         return(
                 <>
-                        <h1 className="text-4xl">Hello, World!</h1>
+                        <nav>
+                                <Navigation/>
+                        </nav>
                 </>
         );
 }
